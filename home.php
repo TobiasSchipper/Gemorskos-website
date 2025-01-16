@@ -1,12 +1,12 @@
 <?php
 // Include Composer autoload
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/./vendor/autoload.php';
 
 use Dotenv\Dotenv;
 
 // Initialize Dotenv and load the .env file
 try {
-    $dotenv = Dotenv::createImmutable(__DIR__ . '/../', 'token.env');
+    $dotenv = Dotenv::createImmutable(__DIR__, 'test.env');
     $dotenv->load();
 } catch (Exception $e) {
     die('Could not load .env file.');
@@ -25,13 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Token is invalid, show an error message
         echo "<script>
                 alert('Verkeerde Token ingevoerd!');
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             </script>";
         exit;
     }
 } else {
     // If the request method is not POST, redirect to the login page
-    header("Location: ../pages/login.html");
+    header("Location: index.html");
     exit;
 }
 ?>
@@ -41,8 +41,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
 <body>
-    
+    <div class="content">
+        <div>
+            <img src="./Germorskos-logo.webp" alt="Germsorkos Logo">
+        </div>
+        <div>
+            <button>Office 365</button>
+            <button>Mail</button>
+            <button>Files</button>
+            <button>Agenda</button>
+            <button>LTT</button>
+            <button>Instellingen</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&#169; 2024/2025 Germorskos</p>
+    </div>
 </body>
 </html>

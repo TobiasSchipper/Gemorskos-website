@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Germorskos</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
 <body>
@@ -25,14 +26,5 @@
             <p>&#169; 2024/2025 Germorskos</p>
         </div>
     </div>
-
-    <script>
-        // Add the onbeforeunload event listener to destroy session on tab close or reload
-        window.onbeforeunload = function() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', '../logout.php', true);
-            xhr.send();
-        };
-    </script>
 </body>
 </html>
