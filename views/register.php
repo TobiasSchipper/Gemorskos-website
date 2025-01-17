@@ -10,7 +10,7 @@
 <body>
     <div class="content">
         <div class="register">
-            <form action="/Gemorskos-website/src/register" method="post">
+            <form action="/Gemorskos-website/register" method="post">
                 <h2>Register</h2>
                 <div class="inputGroup">
                     <input type="text" name="username" id="username" required>

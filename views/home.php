@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /Gemorskos-website/src/login');
+    header('Location: /Gemorskos-website/login');
     exit();
 }
 ?>
@@ -16,10 +16,17 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
     <div class="content">
-        <img src="" alt="">
+        <img src="./img/Germorskos-logo.webp" alt="Germorskos logo">
         <h1>Welcome to Germorskos</h1>
         <p>You are logged in!</p>
-        <a href="/Gemorskos-website/src/logout">Logout</a>
+        <div class="buttons">
+            <button>Office 365</button>
+            <button>Mail</button>
+            <button>Files</button>
+            <button>Agenda</button>
+            <button>Instellingen</button>
+        </div>
+        <a href="/Gemorskos-website/logout">Logout</a>
     </div>
     <div class="footer">
         <p>&#169; 2024/2025 Germorskos</p>

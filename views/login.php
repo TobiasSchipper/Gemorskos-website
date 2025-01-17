@@ -10,7 +10,7 @@
 <body>
     <div class="content">
         <div class="login">
-            <form action="/Gemorskos-website/src/login" method="post">
+            <form action="/Gemorskos-website/login" method="post">
                 <h2>Login</h2>
                 <div class="inputGroup">
                     <input type="text" name="username" id="username" required>
@@ -22,7 +22,7 @@
                 </div>
                 <button class="login" type="submit">Login</button>
             </form>
-            <p>Don't have an account? <a href="/Gemorskos-website/src/register">Register here</a></p>
+            <p>Don't have an account? <a href="/Gemorskos-website/register">Register here</a></p>
         </div>
     </div>
     <div class="footer">

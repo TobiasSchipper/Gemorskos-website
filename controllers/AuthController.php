@@ -15,7 +15,7 @@ class AuthController {
         if ($user && password_verify($password, $user['password'])) {
             session_start();
             $_SESSION['user_id'] = $user['id'];
-            header('Location: /Gemorskos-website/src/home');
+            header('Location: /Gemorskos-website/home');
             exit();
         } else {
             return 'Invalid username or password';
